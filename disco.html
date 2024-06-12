@@ -1,0 +1,80 @@
+<!-- <html>
+    <body>
+        <h1 id="kuchbhi">Hello World</h1>
+        <button onclick="changeText()"> Click me to change text</button>
+
+    </body>
+    <script>
+        function changeText(){
+        x = document.getElementById("kuchbhi").innerHTML
+        alert(x)
+        document.getElementById("kuchbhi").innerHTML = 'Namaste Bharat'
+    }
+    </script>
+</html> -->
+
+<!-- <input type="text" id="num" value="5">
+<button onclick="changeHtml()">Click me</button>
+<h1 id="result"></h1>
+<script>
+    function changeHtml(){
+        x = document.getElementById("num").value
+        output =  `Square of ${x} is ${x*x}`
+        document.getElementById("result").innerHTML = output
+        }
+</script> -->
+
+
+<!-- <body id="body">
+    <button onclick="blueColor()">click me for blue color </button>
+    <button onclick="redColor()">click me for red color</button>
+    <button onclick="greenColor()">click me for green color</button>
+    
+</body>
+<script>
+    function blueColor(){
+    document.getElementById('body').style.backgroundColor = 'blue';
+    }
+    function redColor(){
+    document.getElementById('body').style.backgroundColor = 'red';
+    }
+    function greenColor(){
+    document.getElementById('body').style.background = 'green';
+    }
+    
+</script> -->
+
+<body id="body">
+    
+</body>
+
+<script>
+    //cnt = 0
+    color = 'red'
+    setInterval(function() {
+        //document.getElementById
+        if(color == 'red'){
+            color = 'green'
+            document.getElementById('body').style.backgroundColor = color
+        } else if(color == 'green'){
+            color = 'blue'
+            document.getElementById('body').style.backgroundColor = color
+        } else if(color == 'blue'){
+            color = 'red'
+            document.getElementById('body').style.backgroundColor = color
+        }
+    }, 500
+
+
+)
+</script>
+
+
+
+
+
+
+
+
+
+
